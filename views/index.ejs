@@ -1,0 +1,17 @@
+
+<%- include("partials/header.ejs") %>
+
+
+
+    <% if(locals.adjname){ %>
+      <h1><%= adjname %> <%= nounname %></h1>
+    <%} else {%>
+      <h1>Generate name</h1>
+      <% } %>
+
+<form class="button" action="/submit" method="POST">
+  <input type="submit" value="Generate Name">
+</form>
+
+<h2>note: This is just a fun practice project to help me learn EJS, backend development, and how the frontend communicates with the backend. It includes a random name generator I built while experimenting.</h2>
+ <%- include("partials/footer.ejs") %>
